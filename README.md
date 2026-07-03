@@ -1,4 +1,4 @@
-WHY WE ARE DOING THIS TASK & WHAT WE WILL ACHIEVE
+Puropose and achiements:
 
 Cloud bills can spiral out of control overnight. A developer might leave a massive EC2 instance running, or a misconfigured Lambda might loop infinitely, resulting in thousands of dollars in NAT Gateway charges.
 
@@ -21,7 +21,7 @@ Step 2 — Create the SNS Topic Why: Simple Notification Service (SNS) allows us
 AWS Console -> SNS -> Topics -> Create topic.
 Type: Standard. Name: Daily-FinOps-Reports.
 Create Topic.
-Click Create subscription -> Protocol: Email -> Endpoint: manager@yourcompany.com.
+Click Create subscription -> Protocol: Email -> Endpoint: chandansahu1303@gmail.com.
 Check your email and click the confirmation link.
 SAVE the Topic ARN.
 =================================== PART 3 — THE AI FINOPS LAMBDA====================================
