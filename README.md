@@ -56,7 +56,6 @@ import os
 import re
 from datetime import datetime, timedelta
 from typing import Any, Dict, List, Tuple
-
 import boto3
 from botocore.exceptions import ClientError
 logger = logging.getLogger()
@@ -67,7 +66,6 @@ class FinOpsReportManager:
     Orchestrates the collection of AWS cost data, AI-driven analysis 
     via Amazon Bedrock, and delivery via Amazon SNS.
     """
-    
     def __init__(self, region: str = 'ap-south-1'):
         self.region = region
         self.ce_client = boto3.client('ce', region_name=self.region)
