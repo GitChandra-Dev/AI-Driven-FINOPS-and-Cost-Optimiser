@@ -49,7 +49,7 @@ SNS_TOPIC_ARN = <your-topic-arn>
 
 
 **Implementation Code: lambda_function.py**
-
+```Python
 import json
 import logging
 import os
@@ -168,7 +168,7 @@ def lambda_handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
         logger.exception(f"Critical failure in FinOps Pipeline: {str(e)}")
         return {"statusCode": 500, "body": f"Internal Server Error: {str(e)}"}
 
-
+```
 
 
 
