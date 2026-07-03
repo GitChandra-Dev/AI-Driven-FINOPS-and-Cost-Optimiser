@@ -26,7 +26,7 @@ and for SNS Topic follow this :
 AWS Console -> SNS -> Topics -> Create topic.
 Type: Standard. Name: Daily-FinOps-Reports.
 Create Topic.
-Click Create subscription -> Protocol: Email -> Endpoint: manager@yourcompany.com.
+Click Create subscription -> Protocol: Email -> Endpoint: chandansahu1303@gmail.com(place your mail).
 Check your email and click the confirmation link.
 SAVE the Topic ARN.
 
