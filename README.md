@@ -59,8 +59,6 @@ from typing import Any, Dict, List, Tuple
 
 import boto3
 from botocore.exceptions import ClientError
-
-# Setup structured logging
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
@@ -171,6 +169,10 @@ def lambda_handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
     except Exception as e:
         logger.exception(f"Critical failure in FinOps Pipeline: {str(e)}")
         return {"statusCode": 500, "body": f"Internal Server Error: {str(e)}"}
+
+
+
+
 
         
 **3. Automation & Scheduling**
